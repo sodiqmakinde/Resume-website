@@ -1,5 +1,5 @@
 var menubtn = document.getElementById("menubtn");
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementById("navbar")
 var menu = document.getElementById("menu");
 
 menubtn.onclick = function(){
