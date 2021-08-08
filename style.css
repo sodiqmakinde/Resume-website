@@ -34,6 +34,7 @@ section.header-background{
     display: noe;
     width: 15%;
     top: -30px;
+    transition: 1s;
     right: -320px;
     font-size: 18px;
     position: relative;
