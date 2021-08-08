@@ -1,12 +1,8 @@
-var menubtn = document.getElementById("menubtn");
-var navbar = document.getElementById("navbar")
-var menu = document.getElementById("menu");
-
-menubtn.onclick = function(){
-if(navbar.style.right === "-250px"){
-navbar.style.right = "0";
-}
-else{
-    navbar.style.right = "-250px";
-}
+function myFunction() {
+    var x = document.getElementById("navbar");
+    if (x.style.display === "block"){
+        x.style.display = "none" ;
+    } else {
+        x.style.display = "block";
+    }
 }

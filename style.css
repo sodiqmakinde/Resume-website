@@ -5,13 +5,6 @@
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
 }
-#navbar{
-    height: 40px;
-    transition: 0.5s;
-    right: -250px;
-    position: fixed;
-    top: 0;
-}
 section{
     padding: 0 15px;
 }
@@ -35,30 +28,21 @@ section.header-background{
 .header{
     padding-top: 15px;
     padding-left: 40px;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
 }
 
 #menubtn button{
     display: noe;
     width: 15%;
-    float: right;
+    top: -30px;
+    right: -320px;
     font-size: 18px;
     position: relative;
-    left: 40%;
-    top: -30px;
     cursor: pointer;
     padding: 5px 5px;
     color: whitesmoke;
     border: 1px solid gray;
     background: transparent;
 }
-/* h1,h2,h3,h4,h5,h6{
-    font-family: 'Inria Sans', sans-serif;
-}
-p{ */
-
 .header h1{
     font-family: 'Inria Sans' sans-serif;
     color: rgb(251, 251, 251);
@@ -71,7 +55,7 @@ p{ */
     height: 20vh;
     background-color: #07cb79;
     float: right;
-    display: block;
+    display: none;
     line-height: 1;
     position: relative;
     top: -50px;
