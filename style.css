@@ -99,7 +99,6 @@ section.header-background{
 }
 .work-title p{
      font-size: 23px;
-     padding-bottom: 30px;
 }
 .details{
     padding-top: 25px;
@@ -499,6 +498,13 @@ comment h3{
         position: relative;
         box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
     }
+    .comment img {
+    margin: 20px 5px 0 4px;
+    width: 20%;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 10px;
+    }
     .interest-height {
         height: 670px;
         margin-top: 40px;
@@ -509,21 +515,115 @@ comment h3{
     }
 }
 
-@media(min-width: 991px){
-    .resumedp img{
+@media(min-width: 996px){
+    section{
+        padding: 0 150px;
+    }
+    .container {
+        width: 100%;
+        max-width: 960px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto;
+    }
+    .details-height {
+        margin-top: 100px;
+        height: auto;
+        box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+    }
+
+    /* .resumedp img{
         width: 30%;
         position: relative;
         margin-top: -10px;
         border: 30px solid white;
+    } */
+    .container-entires{
+        width: 100%;
+        margin-top: -480px;
+        right: -40%;
+        line-height: 2;
+        position: absolute;
     }
-    .header button{
+    .details,.details-end{
+        display: flex;
+        width: 100%;
+    }
+    .details span.address{
+        padding-left: 20px;
+    }
+    .details span.age{
+        padding-left: 50px;
+    }
+    .details span.mail{
+        padding-left: 32px;
+    }
+    .details span.phone{
+        padding-left: 28px;
+    }
+    section.header-background {
+        padding: 0;
+        display: none;
+        background-repeat: no-repeat;
+        background-position: cover;
+        height: 70vh;
+    }
+    .details-end p {
+        display: block;
+        margin-left: 25px;
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #9da0a7;
+    }
+    .details-end button {
+        color: #fff;
+        background-color: #07cb79;
+        font-size: 12px;
+        font-weight: 700;
+        height: 25px;
+        
+        margin-top: 10px;
+        display: inline-block;
+        margin-bottom: 15px;
+        border: 1px solid #07cb79;
+        border-radius: 4px;
+    }
+    .my-name span{
+        font-weight: 300;
+        font-size: 100%;
+    }
+    .my-name h1{
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .work-title p{
+        font-size: 18px;
+    }
+    .details h1{
+        font-weight: 700;
+        font-size: 12px;
+        color: #333333;
+    }
+    .details p{
+        font-size: 15px;
+        font-weight: 400;
+        color: #9da0a7;
+       padding-left: 40px;
+    }
+    .social-icon .fa{
         display: none;
     }
-    section.header-background{
-        padding: 0;
-        width: 120%;
-        background-image: url(Images/simon-maage-KTzZVDjUsXw-unsplash.jpg);
-        background-repeat: no-repeat;
-        height: 100vh;
+    
+    hr { 
+        width: 40%;
+        margin: 10px 0 10px 0;
+     }
+    .resumedp img {
+        width: 40%;
+        padding-right: 30px ;
+        margin-top: 10px;
+        border: 40px solid white;
     }
 }
