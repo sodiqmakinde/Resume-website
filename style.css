@@ -5,6 +5,9 @@
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 section{
     padding: 0 15px;
 }
@@ -531,13 +534,6 @@ comment h3{
         height: auto;
         box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
     }
-
-    /* .resumedp img{
-        width: 30%;
-        position: relative;
-        margin-top: -10px;
-        border: 30px solid white;
-    } */
     .container-entires{
         width: 100%;
         margin-top: -480px;
@@ -548,6 +544,9 @@ comment h3{
     .details,.details-end{
         display: flex;
         width: 100%;
+    }
+    .bio hr{
+        display: none;
     }
     .details span.address{
         padding-left: 20px;
@@ -582,13 +581,20 @@ comment h3{
         background-color: #07cb79;
         font-size: 12px;
         font-weight: 700;
-        height: 25px;
-        
+        height: 25px;  
         margin-top: 10px;
         display: inline-block;
         margin-bottom: 15px;
         border: 1px solid #07cb79;
         border-radius: 4px;
+    }
+    .bio p {
+        font-size: 30px;
+        margin-top: 30px;
+        font-weight: 300;
+        color: #000;
+        line-height: 50px;
+        margin-bottom: 50px;
     }
     .my-name span{
         font-weight: 300;
@@ -625,5 +631,46 @@ comment h3{
         padding-right: 30px ;
         margin-top: 10px;
         border: 40px solid white;
+    }
+    .portfolio-height {
+        height: auto;
+        margin-top: 40px;
+        border-top: 4px solid #07cb79;
+        background-color: white;
+        position: relative;
+        box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+    }
+    .vl{
+        display: none;
+
+    }
+    .desktop-icon-box{
+        display: flex;
+        padding: 0 150px;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+    .desktop-icon{
+        padding-left: 90px;
+    }
+    .desktop-icon1 .fa{
+        color: #fff;
+    }
+    .desktop-icon .fa{
+        font-size: 20px;
+        color: #fff;
+    }
+    .desktop-icon .fa:hover{
+        font-size: 20px;
+        background-color: #ccc;
+        padding: 10px;
+        border-radius: 50%;
+        stroke: aquamarine;
+        color: rgb(153, 151, 151);
+    }
+    
+    .flexbox{
+        display: flex;
+        justify-content: space-around;
     }
 }
