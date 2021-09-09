@@ -603,6 +603,12 @@ comment h3{
         font-weight: 300;
         font-size: 100%;
     }
+    .portfolio-height {
+        width: 30%;
+    }
+    .portfolio h1::before{
+      
+    }
     .my-name h1{
         font-size: 36px;
         font-weight: 700;
