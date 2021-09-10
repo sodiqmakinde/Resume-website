@@ -555,7 +555,6 @@ comment h3{
    
     nav{
         padding: 0 30px;
-        z-index: 100;
     }
     .details-height {
         margin-top: 200px;
@@ -567,6 +566,8 @@ comment h3{
     ul li{
         font-size: 17px;
         font-weight: 600;
+        margin-left: 40px;
+        margin-top: 20px;
         margin-bottom: 20px;
     }
     .quicklink{
@@ -581,12 +582,13 @@ comment h3{
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        transform: translateX(100%);
+        display: none;
         transition: transform 0.5s ease-in;
     }
 
     .scroll-in{
-        transform: translateX(0%);
+        display: block;
+        transition: 1s;
     }
 }
 
