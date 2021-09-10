@@ -47,6 +47,7 @@ ul li:hover{
     width: 25px;
     margin: 5px;
     font-weight: 600;
+    transition: 0.3s ease;
     background-color: #fff;
 }
 
@@ -561,12 +562,12 @@ comment h3{
     } 
     .burger{
         display: block;
-        transition: 0.5;
+        transition: 1.5s;
     }
     ul li{
         font-size: 17px;
         font-weight: 600;
-        margin-left: 40px;
+        margin-left: 30px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -583,12 +584,12 @@ comment h3{
         flex-direction: column;
         justify-content: center;
         display: none;
-        transition: transform 0.5s ease-in;
+        transition: transform 1s ease-in;
     }
 
     .scroll-in{
         display: block;
-        transition: 1s;
+        transition: 1.0s;
     }
 }
 
