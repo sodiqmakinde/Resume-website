@@ -3,11 +3,55 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style-type: none;
     font-family: 'Open Sans', sans-serif;
 }
 html{
     scroll-behavior: smooth;
 }
+
+nav{  /*navbar */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    padding: 0 150px;
+    justify-content: space-between;
+    background-color: #07cb79;
+    align-items: center;
+}
+.logo h1{
+    color: #fff;
+    font-weight: 800;
+}
+ul{
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+}
+ul li{
+    color: #fff;
+    font-weight: 600;
+}
+
+ul li:hover{
+    color: beige;
+}
+.burger{
+    display: none;
+}
+.burger div{
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+
+
+
+
+
 section{
     padding: 0 15px;
 }
@@ -54,35 +98,16 @@ section.header-background{
     font-size: 25px;
 }
 
-#navbar{
-    width: 45%;
-    height: 20vh;
-    background-color: #07cb79;
-    float: right;
-    display: none;
-    line-height: 1;
-    position: relative;
-    top: -50px;
-}
-#navbar ul li{
-    padding-top: 50px;
-    list-style-type: none;
-    text-decoration: none;
-    display: block;
-    color: white;
-    font-weight: 800;
-    padding: 20px;
-
-}
 /* Details starts */
 .details-height{
+   margin-top: 200px;
     height: auto;
     box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
 .resumedp img{
     width: 100%;
     position: relative;
-    margin-top: -350px;
+    
     border: 30px solid white;
 }
 
@@ -521,10 +546,51 @@ comment h3{
     }
 }
 
+
+
+@media(max-width: 768px){
+    nav{
+        padding: 0 30px;
+    }
+    .details-height {
+        margin-top: 150px;
+    }
+    /* .burger div{
+        height: 3px;
+        width: 25px;
+        background-color: #fff;
+    } */
+    .burger{
+        display: block;
+    }
+    ul li{
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .quicklink{
+        top: 10px;
+        right: 0;
+        background-color: #07cb79;
+        position: absolute;
+        height: 30vh;
+        margin-top: 38px;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(100%);
+    }
+}
+
+
 @media(min-width: 996px){
     section{
         padding: 0 150px;
     }
+    
+   
     .container {
         width: 100%;
         max-width: 960px;
