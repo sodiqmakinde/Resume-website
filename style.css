@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    
     font-family: 'Open Sans', sans-serif;
 }
 html{
@@ -14,6 +15,7 @@ nav{  /*navbar */
     height: 50px;
     width: 100%;
     display: flex;
+    position: relative;
     padding: 0 150px;
     justify-content: space-between;
     background-color: #07cb79;
@@ -31,6 +33,7 @@ ul{
 ul li{
     color: #fff;
     font-weight: 600;
+    
 }
 
 ul li:hover{
@@ -229,12 +232,12 @@ section.header-background{
     width: 100%;
 }
 
-.bio p{
-    font-size: 30px;
+.bio p {
+    font-size: 25px;
     margin-top: 30px;
     font-weight: 300;
     color: #000;
-    line-height: 50px;
+    line-height: 45px;
     margin-bottom: 50px;
 }
 /* bioends */
@@ -530,11 +533,11 @@ comment h3{
         box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
     }
     .comment img {
-    margin: 20px 5px 0 4px;
-    width: 20%;
-    object-fit: cover;
-    margin-right: 10px;
-    border-radius: 10px;
+        margin: 20px 5px 0 4px;
+        width: 20%;
+        object-fit: cover;
+        margin-right: 10px;
+        border-radius: 10px;
     }
     .interest-height {
         height: 670px;
@@ -549,19 +552,17 @@ comment h3{
 
 
 @media(max-width: 768px){
+   
     nav{
         padding: 0 30px;
+        z-index: 100;
     }
     .details-height {
-        margin-top: 150px;
-    }
-    /* .burger div{
-        height: 3px;
-        width: 25px;
-        background-color: #fff;
-    } */
+        margin-top: 200px;
+    } 
     .burger{
         display: block;
+        transition: 0.5;
     }
     ul li{
         font-size: 17px;
@@ -581,6 +582,11 @@ comment h3{
         flex-direction: column;
         justify-content: center;
         transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .scroll-in{
+        transform: translateX(0%);
     }
 }
 
@@ -590,6 +596,7 @@ comment h3{
         padding: 0 150px;
     }
     
+   
    
     .container {
         width: 100%;
@@ -745,4 +752,28 @@ comment h3{
         display: flex;
         justify-content: space-around;
     }
+}
+
+
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+   transition: 0.3s;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }
